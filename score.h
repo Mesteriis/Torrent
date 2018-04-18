@@ -27,9 +27,12 @@ public:
     FileInfo FI;
     QVector <FileInfo> ArrFI;
 
-    bool setVar(char Var = 'X', QString Val = "X" );
-    QString getVar(char Var = 'X');
+    bool setVar(char Var = 'd', QString Val = "defaunt" );
+    QString getVar(char Var = 'd');
     bool writeVectorDir (QString Dir);
+
+    bool moveTorFile (QString nameOut, char pathIn = 'e');
+
 private:
     QString DirOut;
     QString DirExt;

@@ -16,6 +16,15 @@ public:
     explicit MWindow(QWidget *parent = 0);
     ~MWindow();
 
+private slots:
+
+
+    void on_commandLinkButton_3_clicked();
+
+    void on_commandLinkButton_2_clicked();
+
+    void on_commandLinkButton_clicked();
+
 private:
     Ui::MWindow *ui;
     SCore *SC = new SCore;

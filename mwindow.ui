@@ -1,20 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MWindow</class>
- <widget class="QDialog" name="MWindow" >
-  <property name="geometry" >
+ <widget class="QDialog" name="MWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>608</width>
+    <height>170</height>
    </rect>
   </property>
-  <property name="windowTitle" >
-   <string>MWindow</string>
+  <property name="minimumSize">
+   <size>
+    <width>608</width>
+    <height>170</height>
+   </size>
   </property>
+  <property name="maximumSize">
+   <size>
+    <width>608</width>
+    <height>170</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Выберите протокол загрузки</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/new/prefix1/main.png</normaloff>:/new/prefix1/main.png</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>591</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QListWidget" name="listWidget">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QCommandLinkButton" name="commandLinkButton_2">
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>Локально</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCommandLinkButton" name="commandLinkButton">
+        <property name="text">
+         <string>Удаленно</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCommandLinkButton" name="commandLinkButton_3">
+        <property name="text">
+         <string>Отменна</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
- <resources/>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>
