@@ -33,6 +33,19 @@ QString SCore::getVar(char Var)
 {
     QString ans;
 
+
+    switch (Var) {
+    case 'e':
+        return DirExt; // = "/Users/" + TMP + "/Library/Mobile Documents/com~apple~CloudDocs/Tor_Links";
+        break;
+    case 'l':
+        return Dirlcl; // = "/Users/" + TMP + "/Downloads/torrent/TorFiles";
+        break;
+    default:
+        return DirOut; // = "/Users/" + TMP + "/Downloads";
+        break;
+    }
+
     return ans;
 }
 

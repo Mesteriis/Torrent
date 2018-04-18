@@ -13,17 +13,20 @@
 #include <QDebug>
 
 
-struct FileInfo {
-    QString Name;
-    QString AbsolutePath;
-};
-FileInfo FI;
-QVector <FileInfo> ArrFI;
+
 
 class SCore
 {
 public:
     SCore();
+
+    struct FileInfo {
+        QString Name;
+        QString AbsolutePath;
+    };
+    FileInfo FI;
+    QVector <FileInfo> ArrFI;
+
     bool setVar(char Var = 'X', QString Val = "X" );
     QString getVar(char Var = 'X');
     bool writeVectorDir (QString Dir);
